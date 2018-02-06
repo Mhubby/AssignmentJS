@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assignmentjs.css">
+	<title>My Login Page</title>
+</head>
+<body>
+	<div class="loginbox">
+		<img src="login.png" class="icon">
+		<h1>Create Your Account</h1>
+			<p>First Name</p>
+			<input type="text" name="" placeholder="Enter First Name" id="name">
+			<p>Surname</p>
+			<input type="text" name="" placeholder="Enter Surname" id="surname">
+			<p>Email</p>
+			<input type="text" name="" placeholder="Enter Mail" id="mol">
+			<p>Password</p>
+			<input type="password" name="" placeholder="Enter Surname" id="password">
+			<input type="submit" name="" onclick="Submit()" value="Create account" id="btn">
+		
+	</div>
+
+	<div class="Details">
+		<h2>Your Details</h2>
+		<h2><div class="see"></div> </h2>
+	</div>
+
+</body>
+<script type="text/javascript">
+	function Submit() {
+	 var name = document.querySelector("#name").value;
+	  var Email = document.querySelector("#mol").value;
+	  var Surname = document.querySelector("#surname").value;
+	  var password = document.querySelector("#password").value;
+	  document.querySelector(".see").innerHTML= "First Name: " + name + "<br> SurName:" + Surname + "<br>Email:" + Email +"<br>password:" + password  ;
+	};
+	
+</script>
+</html>
